@@ -5,7 +5,23 @@ public class StringStudy2 {
 	public void ex2() {
 		//키보드로부터 파일명을 입력 받음, abc.txt, jpg.word
 		//파일이 이미지파일인지 아닌지 구별
-		//확장가 jpg, png, gif, jpeg, 
+		//확장자 jpg, png, gif, jpeg, 
+		String [] files= {"jpg", "png", "gif", "jpeg"};
+		
+		String fileName="abc.test.gif.word";
+		int index = fileName.lastIndexOf(".");
+		
+		fileName=fileName.substring(index+1);//.gif
+		
+		String result="이미지 파일이 아닙니다";
+		for(int i=0;i<files.length;i++) {
+			if(fileName.equals(files[i])) {
+				result="이미지 파일입니다";
+				break;
+			}
+		}
+		System.out.println(result);
+		
 		
 	}
 	
