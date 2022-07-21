@@ -7,15 +7,15 @@ public class WorkerService {
 	//private String info;
 	private StringBuffer sb;
 	
-	public WorkerService() {
+	public WorkerService() { //생성자
 		sb = new StringBuffer();
-		sb.append("iu-인사과-과장-0101111");
+		sb.append("iu-인사과-과장-0101111"); // 뒤에 문자열 계속 추가
 		sb.append(", suji-IT-대리-0102222");
 		sb.append(", choa-영업-부장-0103333");
 		sb.append(", hani-마케팅-사원-0104444");
 	}
 	
-	public WorkerDTO [] init() {
+	public WorkerDTO [] init() { //배열 타입 리턴 메소드
 		//info 파싱해서 WokerDTO에 대입하고
 		//WokerDTO를 모은배열을 리턴
 		String info = sb.toString();
