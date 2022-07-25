@@ -7,8 +7,11 @@ public class ClientMain {
 		System.out.println("Client Start");
 		
 		Client1 c1 = new Client1();
+		Client2 c2 = new Client2();
+		
 		try {
-			c1.send();
+			//c1.send();
+			c2.getFood();
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
