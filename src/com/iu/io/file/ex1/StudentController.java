@@ -12,6 +12,4 @@ public class StudentController {
 	//6. 종      료
 
 }
-//백업 - setlist
-//컨트롤러 - 서비스 - DAO - file
 
